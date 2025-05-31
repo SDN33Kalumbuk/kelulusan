@@ -25,7 +25,7 @@
       background-size: cover;
       background-attachment: fixed;
       position: relative;
-      padding-bottom: 80px; /* ruang untuk footer */
+      padding-bottom: 80px;
     }
 
     .container {
@@ -37,6 +37,18 @@
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       backdrop-filter: blur(5px);
       border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .logo img {
+      max-height: 60px;
+      margin-bottom: 15px;
+    }
+
+    @media (min-width: 768px) {
+      .logo img {
+        max-height: 100px;
+        margin-bottom: 25px;
+      }
     }
 
     h1 {
@@ -146,15 +158,6 @@
       font-style: italic;
     }
 
-    .logo {
-      margin-bottom: 5px;
-    }
-
-    .logo img {
-      max-height: 60px;
-      width: auto;
-    }
-
     .decoration {
       position: absolute;
       z-index: -1;
@@ -244,13 +247,12 @@
   <div class="decoration decoration-1"></div>
   <div class="decoration decoration-2"></div>
 
-  <div class="container" style="text-align: center;">
-    <img src="https://i.pinimg.com/originals/10/12/e8/1012e8c64b646e9453ed3207d8b00111.png" alt="Logo SDN 33 Kalumbuk" style="width: 100px; margin-bottom: 20px;">
+  <div class="container">
+    <div class="logo">
+      <img src="https://i.pinimg.com/originals/10/12/e8/1012e8c64b646e9453ed3207d8b00111.png" alt="Logo SDN 33 Kalumbuk">
+    </div>
     <h1>PENGUMUMAN KELULUSAN<br>SDN 33 Kalumbuk</h1>
     <p>Tahun Ajaran 2024/2025</p>
-</div>
-
-
 
     <div class="search-box">
       <input type="text" id="inputCari" placeholder="🔍 Masukkan Nama atau NISN" />
